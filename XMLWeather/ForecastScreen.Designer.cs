@@ -56,6 +56,14 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.conditionOutput1 = new System.Windows.Forms.Label();
+            this.conditionOutput2 = new System.Windows.Forms.Label();
+            this.conditionOutput3 = new System.Windows.Forms.Label();
+            this.conditionOutput4 = new System.Windows.Forms.Label();
+            this.conditionOutput5 = new System.Windows.Forms.Label();
+            this.citySearchInput = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.cityOutput = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -347,11 +355,89 @@
             this.pictureBox5.TabIndex = 100;
             this.pictureBox5.TabStop = false;
             // 
+            // conditionOutput1
+            // 
+            this.conditionOutput1.BackColor = System.Drawing.Color.White;
+            this.conditionOutput1.Location = new System.Drawing.Point(8, 164);
+            this.conditionOutput1.Name = "conditionOutput1";
+            this.conditionOutput1.Size = new System.Drawing.Size(98, 24);
+            this.conditionOutput1.TabIndex = 101;
+            this.conditionOutput1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // conditionOutput2
+            // 
+            this.conditionOutput2.BackColor = System.Drawing.Color.White;
+            this.conditionOutput2.Location = new System.Drawing.Point(122, 164);
+            this.conditionOutput2.Name = "conditionOutput2";
+            this.conditionOutput2.Size = new System.Drawing.Size(98, 24);
+            this.conditionOutput2.TabIndex = 102;
+            this.conditionOutput2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // conditionOutput3
+            // 
+            this.conditionOutput3.BackColor = System.Drawing.Color.White;
+            this.conditionOutput3.Location = new System.Drawing.Point(237, 164);
+            this.conditionOutput3.Name = "conditionOutput3";
+            this.conditionOutput3.Size = new System.Drawing.Size(98, 24);
+            this.conditionOutput3.TabIndex = 103;
+            this.conditionOutput3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // conditionOutput4
+            // 
+            this.conditionOutput4.BackColor = System.Drawing.Color.White;
+            this.conditionOutput4.Location = new System.Drawing.Point(352, 164);
+            this.conditionOutput4.Name = "conditionOutput4";
+            this.conditionOutput4.Size = new System.Drawing.Size(98, 24);
+            this.conditionOutput4.TabIndex = 104;
+            this.conditionOutput4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // conditionOutput5
+            // 
+            this.conditionOutput5.BackColor = System.Drawing.Color.White;
+            this.conditionOutput5.Location = new System.Drawing.Point(463, 164);
+            this.conditionOutput5.Name = "conditionOutput5";
+            this.conditionOutput5.Size = new System.Drawing.Size(98, 24);
+            this.conditionOutput5.TabIndex = 105;
+            this.conditionOutput5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // citySearchInput
+            // 
+            this.citySearchInput.Location = new System.Drawing.Point(237, 15);
+            this.citySearchInput.Name = "citySearchInput";
+            this.citySearchInput.Size = new System.Drawing.Size(130, 20);
+            this.citySearchInput.TabIndex = 106;
+            // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(373, 14);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(77, 21);
+            this.searchButton.TabIndex = 107;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // cityOutput
+            // 
+            this.cityOutput.ForeColor = System.Drawing.Color.White;
+            this.cityOutput.Location = new System.Drawing.Point(111, 14);
+            this.cityOutput.Name = "cityOutput";
+            this.cityOutput.Size = new System.Drawing.Size(109, 28);
+            this.cityOutput.TabIndex = 108;
+            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.cityOutput);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.citySearchInput);
+            this.Controls.Add(this.conditionOutput5);
+            this.Controls.Add(this.conditionOutput4);
+            this.Controls.Add(this.conditionOutput3);
+            this.Controls.Add(this.conditionOutput2);
+            this.Controls.Add(this.conditionOutput1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -388,6 +474,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -421,5 +508,13 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label conditionOutput1;
+        private System.Windows.Forms.Label conditionOutput2;
+        private System.Windows.Forms.Label conditionOutput3;
+        private System.Windows.Forms.Label conditionOutput4;
+        private System.Windows.Forms.Label conditionOutput5;
+        private System.Windows.Forms.TextBox citySearchInput;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.Label cityOutput;
     }
 }
